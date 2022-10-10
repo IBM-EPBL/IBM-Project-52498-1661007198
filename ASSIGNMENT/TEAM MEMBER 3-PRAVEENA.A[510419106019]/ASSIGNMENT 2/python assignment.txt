@@ -1,0 +1,14 @@
+3.WHY IS PYTHON A POPULAR PROGRAMMING LANGUAGE?
+            Python is a popular language because,
+                                *It is easy to learn.
+                                *It is flexible.
+                                *It is efficient,fast,and reliable.
+                                *It is well suited to data science and analytics.
+                                *It has an active,supportive community and offers versatile web development solution
+4.WHAT ARE THE OTHER FRAMEWORKS THAT CAN BE USED WITH PYTHON?
+                       *Bottle
+                       *web2py
+                       *pyramid
+                       *django
+5.FULL FORM OF WSGI?
+               web server gateway interface.
