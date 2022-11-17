@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Customer Care Registry - User Sign Up</title>
+	<link rel="stylesheet" type="text/css" href="../static/style_forms.css">
+	<link href="../static/icon.png" rel="icon">
+  <link href="../static/icon.png" rel="apple-touch-icon">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<img class="wave" src="../static/wave.png">
+	<div class="container">
+		<div class="img">
+			<img src="../static/bg.svg">
+		</div>
+		<div class="login-content">
+			<form action="/userregister" method="POST">
+				<img src="../static/avatar.svg">
+				<h2 class="title">User Sign Up</h2>
+				<br>{{msg}}<br><br>
+           		<div class="input-div one">
+           		   <div class="i">
+           		   		<i class="fas fa-user"></i>
+           		   </div>
+           		   <div class="div">
+           		   		<h5>Username</h5>
+           		   		<input type="text" class="input" name="username" required>
+           		   </div>
+           		</div>
+				   <div class="input-div one">
+					<div class="i">
+							<i class="fas fa-user"></i>
+					</div>
+					<div class="div">
+							<h5>Email address</h5>
+							<input type="email" class="input" name ="email" required>
+					</div>
+				 </div>
+           		<div class="input-div pass">
+           		   <div class="i"> 
+           		    	<i class="fas fa-lock"></i>
+           		   </div>
+           		   <div class="div">
+           		    	<h5>Password</h5>
+           		    	<input type="password" class="input" name = "password" required>
+            	   </div>
+            	</div>
+            	<a href="/userlog">Already a member ?</a>
+            	<input type="submit" class="btn" value="Register">
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript" src="../static/form_js.js"></script>
+</body>
+</html>
