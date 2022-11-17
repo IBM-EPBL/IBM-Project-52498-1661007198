@@ -1,0 +1,120 @@
+<html>
+<head>
+<title>Customer Resource Management </title>
+<link href="../default.css" rel="stylesheet" type="text/css" media="screen"
+/>
+<style type="text/css">
+.style2
+{
+font-size: large;
+}
+.style3
+{
+width: 144%;
+height: 31px;
+border-style: solid;
+border-width: 1px;
+}
+</style>
+</head>
+<body>
+<form id="form1" runat="server">
+<!-- start header -->
+<div id="header">
+<div id="logo">
+<h1><a href="#">Customer <span> Resource</span> Management
+</a></h1>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+class="style2">Welcome:<asp:Label ID="lbusrnam" runat="server"
+Text=""></asp:Label>
+</span>
+<asp:LinkButton ID="lksgnout" runat="server" Font-Underline="True"
+onclick="lksgnout_Click1"
+>Sign Out</asp:LinkButton>
+</div>
+</div>
+<div id="menu">
+<ul id="main">
+<li class="current_page_item">
+<asp:HyperLink ID="HyperLink1" runat="server"
+NavigateUrl="~/client/frmprf.aspx">Home</asp:HyperLink>
+</li>
+<asp:HyperLink ID="HyperLink2" runat="server">About
+Us</asp:HyperLink>
+</ul>
+</div>
+<!-- end header -->
+<div id="wrapper">
+<!-- start page -->
+<div id="page">
+<div id="sidebar1" class="sidebar">
+<ul>
+<li>
+<h2>NAVIGATIONS</h2>
+</li>
+<li>
+<ul>
+<asp:ContentPlaceHolder ID="ContentPlaceHolder2"
+runat="server">
+<P>
+<table border="1" style="height: 353px" >
+<tr>
+<td valign="top" >
+<asp:TreeView ID="TreeView1" runat="server"
+DataSourceID="SiteMapDataSource1"
+Height="195px" Width="232px">
+</asp:TreeView>
+</td>
+</tr>
+</table>
+</P>
+<P>
+<asp:SiteMapDataSource
+ID="SiteMapDataSource1" runat="server"
+Page | 71
+SiteMapProvider="xyz" />
+</P>
+</asp:ContentPlaceHolder>
+</ul>
+</li>
+</ul>
+</div>
+<!-- start content -->
+<div id="content">
+<div class="post">
+<h1 class="title"><a href="#">Welcome
+Client</a></h1>
+<br />
+<div class="entry">
+<asp:ContentPlaceHolder
+ID="ContentPlaceHolder1" runat="server">
+<table class="style3">
+<tr>
+<td>
+&nbsp;</td>
+</tr>
+</table>
+</asp:ContentPlaceHolder>
+</div>
+</div>
+</div><!-- end content -->
+<!-- start sidebars -->
+<div id="sidebar2" class="sidebar">
+<ul>
+<li>
+</li>
+</ul>
+</div>
+<!-- end sidebars -->
+<div style="clear: both;">&nbsp;</div>
+</div>
+<!-- end page -->
+</div>
+<div id="footer">
+<p class="copyright">&copy;&nbsp;&nbsp;2009 All Rights Reserved
+&nbsp;&bull;&nbsp; Design by Vikrant Sood</p>
+</div>
+</form>
+</body>
+</html>
